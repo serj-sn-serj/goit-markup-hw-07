@@ -29,6 +29,11 @@
 
   /* time function */
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Breakpoints */
+  --phone-screen: 428px; 
+  --tablet-screen: 768px;
+  --desktop-screen: 1440px;
 }
 
 /* Body */
@@ -100,12 +105,37 @@ textarea {
 
 /* Container page */
 .container {
-  max-width: 1158px;
+  /* max-width: 1158px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 15px;
+  padding: 0 15px; */
+
+  /* 320px <= phone screen <= infinity */
+min-width: 320px;
+max-width: 428px;
+margin-right: auto;
+margin-left: auto;
+padding: 0 16px;
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
+
+/* 768px <= tablet screen <= infinity */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  } 
+}
+
+
+/* 1158px <= desktop screen <= infinity */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  } 
+}
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -129,6 +159,8 @@ textarea {
   |============================
 */
 /* top line nav */
+
+
 
 .header-page {
   border-bottom: 1px solid var(--color-text-footer);
