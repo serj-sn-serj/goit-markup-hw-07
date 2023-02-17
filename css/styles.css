@@ -640,7 +640,8 @@ textarea {
 */
 
 .team {
-  width: 428px;
+  min-width: 320px;
+ max-width: 428px;
   height: 2264px;
   margin-right: auto;
   margin-left: auto;
@@ -650,7 +651,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .team {
-    width: 768px;
+    max-width: 768px;
     height: 1232px;
     margin-right: auto;
     margin-left: auto;
@@ -661,7 +662,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .team {
-    width: 1440px;
+    max-width: 1440px;
     height: 770px;
     margin-right: auto;
     margin-left: auto;
