@@ -779,7 +779,8 @@ textarea {
 */
 
 .footer {
-  width: 428px;
+  min-width: 320;
+  max-width: 428px;
   height: 662px;
   margin-right: auto;
   margin-left: auto;
@@ -972,9 +973,11 @@ flex-wrap: wrap;
 
   transition: background-color 250ms var(--time-function);
 }
+
 @media screen and (min-width: 320px) and (max-width: 767.98px){
 .email-form-input {
-  width: 398px;
+  min-width: 320;
+  max-width: 398px;
   height: 40px;
   margin-top: 16px;
   padding: 8px 16px;
