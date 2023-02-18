@@ -489,6 +489,10 @@ textarea {
   | section Feature
   |============================
 */
+.thumb {
+  display: none;
+
+}
 
 @media screen and (min-width: 1200px) {
   .thumb {
@@ -503,17 +507,11 @@ textarea {
   }
 }
 
-.svg-features {
-  display: none;
-
-}
-
-@media screen and (min-width: 1200px) {
   .svg-features {
     display: block;
     margin: 0 auto;
   }
-}
+
 
 .feature-title {
   margin-bottom: 8px;
@@ -633,8 +631,6 @@ textarea {
 
 .card {
   background-size: 260.35px 428px;
-  /* width: 260.35px;
-  height: 428px; */
   margin-left: auto;
   margin-right: auto;
   border-radius: 0px 0px 4px 4px;
@@ -646,14 +642,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .card {
     background-size: 264px 428px;
-         /* width: 264px;
-    height: 428px; */
-    margin-left: auto;
-  margin-right: auto;
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--color-text-hero);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 2px 1px rgba(46, 47, 66, 0.08);
+    
   }
 }
 
@@ -707,9 +696,6 @@ textarea {
   | section Customers
   |============================
 */
-.customers {
-  padding-top: 120px;
-}
 
 .customers-title {
   margin-bottom: 72px;
@@ -722,13 +708,43 @@ textarea {
 .customers-set {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+  gap: 72px 24px;
   justify-content: center;
 }
-
+@media screen and (min-width: 1200px) {
+  .customers-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .thumb-customers {
-  width: 168px;
+  width: 190px;
   height: 88px;
+}
+@media screen and (min-width: 768px) {
+  .thumb-customers {
+    width: 168px;
+    }
+}
+
+.thumb-customers-item {
+  flex-basis: calc((100% - (var(--indent) * var(--items)-1)) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .thumb-customers-item {
+    flex-basis: calc((100% - (var(--indent) * var(--items)-1)) / 4);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb-customers-item {
+    flex-basis: calc((100% - (var(--indent) * var(--items)-1)) / 7);
+  }
 }
 
 .customers-icon {
