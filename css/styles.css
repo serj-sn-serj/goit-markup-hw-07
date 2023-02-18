@@ -1161,7 +1161,7 @@ textarea {
 */
 .menu-toggle {
   position: absolute;
-  top: 24px;
+   top: 24px;
   right: 24px;
   display: flex;
   justify-content: center;
@@ -1188,6 +1188,7 @@ textarea {
   flex-direction: column;
   position: fixed;
 flex-wrap: wrap;
+min-width: 320px;
   top: 0;
   left: 0;
   z-index: 999;
