@@ -1188,7 +1188,6 @@ textarea {
   flex-direction: column;
   position: fixed;
 flex-wrap: wrap;
-min-width: 320px;
   top: 0;
   left: 0;
   z-index: 999;
@@ -1290,12 +1289,24 @@ line-height: 1.11;
 }
 
 /* socials mobile */
+
+
 .socials-mobile {
   display: flex;
   flex-wrap: wrap;
-  gap: 56px;
+  gap: 26px;
   justify-content: center;
   margin-top: 48px;
+}
+
+@media screen and (min-width: 428px) {
+  .socials-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+    justify-content: center;
+    margin-top: 48px;
+  }
 }
 
 .mobile-social-link {
