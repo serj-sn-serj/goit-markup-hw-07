@@ -45,6 +45,16 @@
           >
           <li><a class="header-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
         </ul>
+           <!-- mobile button -->
+           <button
+           class="menu-burger js-open-menu"
+           aria-expanded="false"
+           aria-controls="mobile-menu"
+         >
+         <svg width="32" height="22">
+           <use href="./images/icons.svg#mobile-menu"></use>
+         </svg>
+          </button>
       </div>
     </header>
     <!-- Portfolio content -->
@@ -244,7 +254,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container flex-footer">
-        <div>
+        <div class="logo-footer">
           <a class="footer-logo link" href="./index.html"
             ><span class="color-web">WEB</span>STUDIO</a
           >
@@ -253,8 +263,8 @@
             growth solutions.
           </p>
         </div>
-        <!-- social footer -->
-        <div class="social-media">
+        <!--social footer -->
+       <div class="social-media social-footer">
           <p class="social-text">Social Media</p>
           <ul class="social-list-footer">
             <li
@@ -295,15 +305,15 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+            </li>
           </ul>
         </div>
         <!-- form footer -->
         <form class="form-footer">
-          <div
+          <div class="footer-form"
             ><label class="email-form-label">
-              Subscribe <input class="email-form-input" type="email" placeholder="E-mail" /></label
+              Subscribe <input class="email-form-input" name="email" type="email" placeholder="E-mail" /></label
           ></div>
           <div class="footer-btn"
             ><button class="btn footer-form-btn" type="submit"
@@ -316,5 +326,131 @@
         </form>
       </div>
     </footer>
-  </body>
+     <!-- modal form -->
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="close-btn-thumb">
+          <button class="close-btn" data-modal-close type="button">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn-modal"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- form modal group -->
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="order-form">
+          <label class="order-form-label" for="user_name">Name</label>
+          <div class="order-form-group" role="group">
+            <input class="order-form-field" id="user_name" name="user_name" type="text" />
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_phone">Phone</label>
+          <div class="order-form-group" role="group">
+            <input class="order-form-field" id="user_phone" name="user_phone" type="tel" />
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_mail">Email</label>
+          <div class="order-form-group" role="group">
+            <input class="order-form-field" id="user_mail" name="user_mail" type="email" />
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="order-form-label">Comment</label>
+          <textarea
+            class="order-form-comment"
+            id="comment"
+            name="comment"
+            rows="6"
+            placeholder="Text input"
+          ></textarea>
+          <label class="order-form-agreement">
+            <input class="order-form-checkbox" type="checkbox" />
+            <span class="txt-checkbox">
+              I accept the terms and conditions of the
+              <a class="order-form-link" href="#">Privacy Policy</a></span>
+          </label>
+          <div class="btn-form" role="group">
+            <button class="btn btn-modal-form" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close-btn-modal"></use>
+        </svg>
+      </button>
+<!-- mobile nav -->
+      <ul class="mobile-nav-list">
+        <li><a class="mobile-nav-studio link" href="./index.html">Studio</a></li>
+        <li><a class="mobile-nav-portfolio link" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="mobile-nav-contacts link" href="#">Contacts</a></li>
+      </ul>
+    <!-- top line contacts -->
+    <ul class="mobile-contacts-list">
+      <li><a class="mobile-header-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+      <li
+        ><a class="mobile-header-mailto link" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        ></li>
+          </ul>
+    <ul class="socials-mobile">
+      <li
+        ><a
+          class="mobile-social-link"
+          href="https://www.instagram.com/"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use></svg></a
+      ></li>
+      <li
+        ><a
+          class="mobile-social-link"
+          href="https://twitter.com/"
+          aria-label="twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use></svg></a
+      ></li>
+      <li
+        ><a
+          class="mobile-social-link"
+          href="https://www.facebook.com/"
+          aria-label="facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use></svg></a
+      ></li>
+      <li
+        ><a
+          class="mobile-social-link"
+          href="https://www.linkedin.com/"
+          aria-label="linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use></svg></a
+      ></li>
+    </ul>
+    </div>
+    <!--script  -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
+    </body>
 </html>

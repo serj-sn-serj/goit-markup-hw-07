@@ -126,19 +126,13 @@
           <h2 class="what-title">What are we doing</h2>
           <ul class="card-set">
             <li class="card-set-item what-set-item">
-              <img src="./images/box-page1/box1.jpg" alt="computer" width="360" height="300" />
+             <img srcset="./images/box-page1/box-figma/_desk@1x-3.webp 1x,./images/box-page1/box-figma/_desk@2x-3.webp 2x" src="./images/box-page1/box-figma/_desk@1x-3.webp" alt="computer" width="360" height="300" loading="lazy" />
+             </li>
+            <li class="card-set-item what-set-item">
+              <img srcset="./images/box-page1/box-figma/_desk@1x-2.webp 1x,./images/box-page1/box-figma/_desk@2x-2.webp 2x" src="./images/box-page1/box-figma/_desk@1x-2.webp" alt="watsapp" width="360" height="300" loading="lazy" />
             </li>
             <li class="card-set-item what-set-item">
-              <img src="./images/box-page1/box2.jpg" alt="phone+watsapp" width="360" height="300" />
-            </li>
-            <li class="card-set-item what-set-item">
-              <img
-                src="./images/box-page1/box3.jpg"
-                alt="phone
-            for hand"
-                width="360"
-                height="300"
-              />
+              <img srcset="./images/box-page1/box-figma/_desk@1x-1.webp 1x,./images/box-page1/box-figma/_desk@2x-1.webp 2x" src="./images/box-page1/box-figma/_desk@1x-1.webp" alt="phone" width="360" height="300" loading="lazy" />
             </li>
           </ul>
         </div>
@@ -149,7 +143,12 @@
           <h2 class="our-title">Our Team</h2>
           <ul class="card-set team">
             <li class="card card-set-item">
-              <img src="./images/team-page1/team1.jpg" alt="Mark" width="264" height="260" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team-page1/team-figma/img_desk@1x-3.webp 1x,./images/team-page1/team-figma/img_desk@2x-3.webp 2x" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="./images/team-page1/team-figma/img_tab@1x-3.webp 1x,./images/team-page1/team-figma/img_tab@2x-3.webp 2x" type="image/jpg">
+                <source media="(max-width: 767px)" srcset="./images/team-page1/team-figma/img_mob@1x.webp 1x,./images/team-page1/team-figma/img_mob@2x.webp 2x" type="image/jpg">
+                <img src="./images/team-page1/team-figma/img_mob@1x.webp" alt="Mark" width="264" height="260" loading="lazy" />
+            </picture>
               <div class="card-team">
                 <h3 class="team-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -198,8 +197,13 @@
               </div>
             </li>
             <li class="card card-set-item">
-              <img src="./images/team-page1/team2.jpg" alt="Tom" width="264" height="260" />
-              <div class="card-team">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team-page1/team-figma/img_desk@1x-2.webp 1x,./images/team-page1/team-figma/img_desk@2x-2.webp 2x" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="./images/team-page1/team-figma/img_tab@1x-2.webp 1x,./images/team-page1/team-figma/img_tab@2x-2.webp 2x" type="image/jpg">
+                <source media="(max-width: 767px)" srcset="./images/team-page1/team-figma/img_mob@1x-1.webp 1x" src="./images/team-page1/team-figma/img_mob@2x-1.webp 2x" type="image/jpg">
+                <img src="./images/team-page1/team-figma/img_mob@1x-1.webp" alt="Tom" width="264" height="260" loading="lazy" />
+            </picture>
+                <div class="card-team">
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
                 <ul class="socials-team">
@@ -247,8 +251,13 @@
               </div>
             </li>
             <li class="card card-set-item">
-              <img src="./images/team-page1/team3.jpg" alt="Camila" width="264" height="260" />
-              <div class="card-team">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team-page1/team-figma/img_desk@1x-1.webp 1x,./images/team-page1/team-figma/img_desk@2x-1.webp 2x" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="./images/team-page1/team-figma/img_tab@1x-1.webp 1x,./images/team-page1/team-figma/img_tab@2x-1.webp 2x" type="image/jpg">
+                <source media="(max-width: 767px)" srcset="./images/team-page1/team-figma/img_mob@1x-2.webp 1x" src="./images/team-page1/team-figma/img_mob@2x-2.webp 2x" type="image/jpg">
+                <img src="./images/team-page1/team-figma/img_mob@1x-2.webp" alt="Camila" width="264" height="260" loading="lazy"  />
+            </picture>
+                <div class="card-team">
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="socials-team">
@@ -296,8 +305,13 @@
               </div>
             </li>
             <li class="card card-set-item">
-              <img src="./images/team-page1/team4.jpg" alt="Daniel" width="264" height="260" />
-              <div class="card-team">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team-page1/team-figma/img_desk@1x.webp 1x,./images/team-page1/team-figma/img_desk@2x.webp 2x" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="./images/team-page1/team-figma/img_tab@1x.webp 1x,./images/team-page1/team-figma/img_tab@2x.webp 2x" type="image/jpg">
+                <source media="(max-width: 767px)" srcset="./images/team-page1/team-figma/img_mob@1x-3.webp 1x" src="./images/team-page1/team-figma/img_mob@2x-3.webp 2x" type="image/jpg">
+                <img src="./images/team-page1/team-figma/img_mob@1x-3.webp" alt="Daniel" width="264" height="260" loading="lazy" />
+            </picture>
+                <div class="card-team">
                 <h3 class="team-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="socials-team">
@@ -349,7 +363,7 @@
       </section>
       <!-- customers -->
       <section class="section">
-        <div class="container">
+        <div class="container customers-cont">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-set">
             <li class="thumb-customers thumb-customers-item">
