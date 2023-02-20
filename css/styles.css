@@ -188,30 +188,31 @@ textarea {
     --items: 4
   }
 }
+
 /**
   |============================
   | Section
   |============================
 */
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
-     }
   }
-
-  @media screen and (min-width: 320px) and (max-width: 767.99px){
-    .section.team {
-      padding-top: 96px;
-      padding-bottom: 128px;
-       }
-    }
-  
-@media screen and (min-width: 768px){
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767.99px) {
+  .section.team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -457,66 +458,58 @@ textarea {
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .section-hero  {
-      background-image: linear-gradient(
-        to right,
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ), url(../images/bg-hero-page1/hero-figma/Dark-bg_mob@2x.webp);
-    }
+        rgba(46, 47, 66, 0.7)), url(../images/bg-hero-page1/hero-figma/Dark-bg_mob@2x.webp);
   }
+}
 
-  @media screen and (min-width: 481px) {
-    .section-hero {
-      max-width: 1199.99px;
-      padding-top: 112px;
-      padding-bottom: 108px;
-      background-image: linear-gradient(
-          to right,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/bg-hero-page1/hero-figma/Dark-bg_tab@1x.webp);
-    }
+@media screen and (min-width: 481px) {
+  .section-hero {
+    max-width: 1199.99px;
+    padding-top: 112px;
+    padding-bottom: 108px;
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/bg-hero-page1/hero-figma/Dark-bg_tab@1x.webp);
   }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .section-hero {
-        background-image: linear-gradient(
-          to right,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ), url(../images/bg-hero-page1/hero-figma/Dark-bg_tab@2x.webp)
-    }
-  }
+}
 
-  @media screen and (min-width: 769px) {
-    .section-hero {
-      max-width: 1980px;
-      padding: 188px 0;
-      background-image: linear-gradient(
-          to right,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/bg-hero-page1/hero-figma/people-office_desk@1x.webp);
-    }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/bg-hero-page1/hero-figma/Dark-bg_tab@2x.webp)
   }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .section-hero {
-        background-image: linear-gradient(
-          to right,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ), url(../images/bg-hero-page1/hero-figma/people-office_desk@2x.webp);
-      }
-    }
-  
+}
+
+@media screen and (min-width: 769px) {
+  .section-hero {
+    max-width: 1980px;
+    padding: 188px 0;
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/bg-hero-page1/hero-figma/people-office_desk@1x.webp);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/bg-hero-page1/hero-figma/people-office_desk@2x.webp);
+  }
+}
+
 
 .hero-title {
   margin: 0 auto;
@@ -672,12 +665,13 @@ textarea {
   |============================
 */
 @media screen and (min-width: 320px) {
-.team {
-  margin-right: auto;
-  margin-left: auto;
-   background-color: var(--color-btn-filter);
+  .team {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--color-btn-filter);
+  }
 }
-}
+
 @media screen and (min-width: 768px) {
   .team {
     padding-bottom: 104px;
@@ -837,7 +831,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .thumb-customers-item {
     flex-basis: calc(100% - (2 * var(--items)-1));
- 
+
   }
 }
 
