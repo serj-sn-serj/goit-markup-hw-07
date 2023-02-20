@@ -558,7 +558,7 @@ textarea {
 
 /**
   |============================
-  | section Feature
+  |Feature section 
   |============================
 */
 .thumb {
@@ -630,7 +630,7 @@ textarea {
 
 /**
   |============================
-  | section What
+  |What section 
   |============================
 */
 
@@ -661,7 +661,7 @@ textarea {
 
 /**
   |============================
-  |  section Our team
+  |Our team  section 
   |============================
 */
 @media screen and (min-width: 320px) {
@@ -777,7 +777,7 @@ textarea {
 
 /**
   |============================
-  | section Customers
+  |Customers section 
   |============================
 */
 
@@ -863,7 +863,7 @@ textarea {
 
 /**
   |============================
-  |  Footer
+  |Footer section
   |============================
 */
 
@@ -1439,7 +1439,7 @@ textarea {
 
 /**
   |============================
-  | mobile menu
+  | Mobile menu
   |============================
 */
 .menu-toggle {
@@ -1654,7 +1654,11 @@ textarea {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*  Project  */
+/**
+  |============================
+  | Project
+  |============================
+*/
 
 .project {
   background-color: var(--color-text-hero);
