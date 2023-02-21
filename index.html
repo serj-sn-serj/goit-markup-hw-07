@@ -122,14 +122,20 @@
           <h2 class="what-title">What are we doing</h2>
           <ul class="card-set">
             <li class="card-set-item what-set-item">
+              <picture>
+              <source 
+                type="image/jpg"
+                media="(min-width: 1200)"
+                srcset="./images/box-page1/box/_desk@1x-2.webp 1x,
+                ./images/box-page1/box/_desk@2x-2.webp 2x"/>
               <img
-                srcset="./images/box-page1/box/_desk@2x-2.webp 2x"
                 src="./images/box-page1/box/_desk@1x-2.webp"
                 alt="computer"
                 width="360"
                 height="300"
                 loading="lazy"
               />
+            </picture>
             </li>
             <li class="card-set-item what-set-item">
               <img
@@ -168,7 +174,7 @@
                     ./images/team-page1/team-figma/img_desk@1x-3.webp 1x,
                     ./images/team-page1/team-figma/img_desk@2x-3.webp 2x
                   "
-                />
+                  />
                 <source
                   type="image/jpg"
                   media="(min-width: 768px)"
