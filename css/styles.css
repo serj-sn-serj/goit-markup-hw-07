@@ -174,7 +174,7 @@ textarea {
 
 /* calc((100% - кіль-сть_відступів_в_рядку * довжина_одного_відступу_в_рядку) / кіль-сть_елементів_в_рядку) */
 .card-set-item {
-  flex-basis: calc((100% - (var(--indent) * var(--items)-1)) / var(--items));
+  flex-basis: calc((100% - (var(--indent) * var(--items))) / var(--items));
 }
 
 @media screen and (min-width: 768px) {
@@ -633,16 +633,14 @@ textarea {
   |What section 
   |============================
 */
+.section-what {
+  padding-top: 0;
+}
 
 @media screen and (min-width: 0px) and (max-width: 1199.98px) {
   .section-what {
     display: none;
   }
-}
-
-
-.section-what {
-  padding-top: 0;
 }
 
 .what-set-item {
@@ -825,21 +823,16 @@ textarea {
 }
 
 .thumb-customers-item {
-  flex-basis: calc((100% - (var(--indent) * var(--items)-1)) / 2);
+  flex-basis: calc((100% - (var(--indent) * var(--items))) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .thumb-customers-item {
-    flex-basis: calc(100% - (2 * var(--items)-1));
+    flex-basis: calc(100% - (2 * var(--items)));
 
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .thumb-customers-item {
-    flex-basis: calc(100% - (5 * var(--items)-1));
-  }
-}
 
 .customers-icon {
   display: flex;
