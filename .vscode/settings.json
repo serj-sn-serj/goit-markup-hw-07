@@ -262,5 +262,6 @@
     "empty-lines-after-comment": 1
   },
   "files.autoSave": "afterDelay",
-  "svg.preview.background": "editor"
+  "svg.preview.background": "editor",
+  "liveServer.settings.port": 5501
 }
